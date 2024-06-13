@@ -229,7 +229,7 @@
     <script src="./JavaScript/typewriter.js"></script>
     <script>
         let i = 0;
-        let imgArray = ['slide1.jpg', 'slide2.jpg', 'slide3.jpg'];
+        let imgArray = ['./assets/images/slide1.jpg', './assets/images/slide2.jpg', './assets/images/slide3.jpg'];
 
         function changeImg() {
             document.getElementById('slideshow').src = imgArray[i];
