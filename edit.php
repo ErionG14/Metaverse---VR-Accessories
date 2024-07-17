@@ -93,7 +93,10 @@ $user  = $userRepository->getUserById($userId);
                 <input type="text" name="password" value="<?= $user['password'] ?>">
             </div>
             <div class="inputPassword input">
-                <input type="text" name="role" value="<?= $user['role'] ?>">
+                 <select name="role">
+        <option value="user" <?= $user['role'] == 'user' ? 'selected' : '' ?>>User</option>
+        <option value="admin" <?= $user['role'] == 'admin' ? 'selected' : '' ?>>Admin</option>
+    </select>
             </div>
            
                 <input type="submit" name="editBtn" value="save">
