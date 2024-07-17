@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How it Works</title>
     <script src="https://kit.fontawesome.com/a23437b52f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="/CSS/style.css">
     <link rel="stylesheet" href="./CSS/navbar.css">
     <link rel="stylesheet" href="./CSS/banner.css">
     <link rel="stylesheet" href="./CSS/second-banner.css">
