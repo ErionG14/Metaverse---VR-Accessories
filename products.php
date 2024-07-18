@@ -91,7 +91,7 @@
         echo '<input type="hidden" name="productId" value="' . $product['id'] . '">';
 
         echo '<div class="productSubCard-up">';
-        echo '<div class="productImage" style="background-image: url(' . $product['image_url'] . ');"></div>';
+        echo '<div class="productImage" <img src=""'.$product['img_url']. '"></div>';
         echo '</div>';
 
         echo '<div class="productSubCard-down">';
