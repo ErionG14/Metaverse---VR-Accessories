@@ -45,7 +45,7 @@
         </div>
 
     </div>
-    <!-- ABOUT US COVER FILLON KETU -->
+    <!-- ABOUT US COVER STARTS HERE -->
     <div class="aboutUsSub">
         <div class="aboutUs-sub-conatiner">
             <h1>Welcome to metaverse where innovation meets virtual reality. We are dedicated to redefining
@@ -53,9 +53,9 @@
                   offering users a unique and immersive experience like never before.</h1>
         </div>
     </div>
-    <!-- ABOUT US COVER MBARON KETU -->
+    <!-- ABOUT US COVER ENDS HERE -->
 
-    <!-- OURMISSION FILLON KETU -->
+    <!-- OURMISSION STARTS HERE -->
 <div class="ourmission">
     <h5>our mission</h5>
     <h1>Giving people the power to build <br> community and bring the world closer together</h1>
@@ -63,9 +63,9 @@
     <img src="./assets/images/OurMission.jpg" alt="" width="550" height="300">
     </div>
 </div>
-    <!-- OURMISSION FILLON KETU -->
+    <!-- OURMISSION STARTS HERE -->
 
-     <!-- SECONDTEXT QE I PERKET "OUR PRINCIPLES" FILLON KETU -->
+     <!-- SECONDTEXT THAT INCLUDES "OUR PRINCIPLES" STARTS HERE -->
 <div class="secondtext">
     <div class="secondtext-heading">
     <h1>Our Principles</h1>
@@ -82,9 +82,9 @@
         </div>
 </div>
 </div>
-    <!-- SECONDTEXT QE I PERKET "OUR PRINCIPLES" FILLON KETU -->
+    <!-- SECONDTEXT QTHAT INCLUDES "OUR PRINCIPLES" STARTS HERE -->
 
-    <!-- LEADERSHIP FILLON KETU -->
+    <!-- LEADERSHIP STARTS HERE -->
 <div class="leadership">
 
     <div class="leadershipUp">
@@ -106,9 +106,9 @@
     
 </div>
 
-    <!-- LEADERSHIP MBARON KETU -->
+    <!-- LEADERSHIP ENDS HERE -->
 
-    <!-- FOOTERI ESHTE I BERE UPDATE ME INFORMATA -->
+    <!-- FOOTER STARTS HERE -->
 <div class="footer">
     <div class="footerUp">
         <div class="footerLogo"></div>
