@@ -37,6 +37,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Manage Products</title>
+        <script src="https://kit.fontawesome.com/a23437b52f.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./CSS/login.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="./CSS/navbar.css">
@@ -67,6 +68,18 @@
 
         tr:nth-child(even) {
             background-color: #dddddd;
+        }
+
+        
+        .button {
+            text-decoration: none;
+            text-align: center;
+            background-color: var(--mainColor);
+            ;
+            color: white;
+            padding: 2px 8px 2px 8px;
+            border-radius: 8px;
+
         }
     </style>
 
@@ -112,7 +125,7 @@
                         <th>Description</th>
                         <th>Price</th>
                         <th>Image</th>
-                        <th>Action</th>
+                        <th colspan="2">Action</th>
                     </tr>
                     <?php
 
@@ -131,8 +144,8 @@
                         <td>$product[description] </td>
                         <td>$product[price] </td>
                         <td>$product[image_url] </td>
-                        <td><a href='editproducts.php?id=$product[id]'>Edit</a> </td>
-                        <td><a href='deleteproduct.php?id=$product[id]'>Delete</a></td>
+                        <td><a href='editproducts.php?id=$product[id]' class='button'><i class='fa-solid fa-pencil'></i></a></td>
+                        <td><a href='deleteproduct.php?id=$product[id]' class='button'><i class='fa-solid fa-trash'></i></a></td>
                    </tr>
                    ";
                     }

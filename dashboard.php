@@ -9,6 +9,7 @@ if (!isset($_SESSION['name'])) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,36 +28,48 @@ if (!isset($_SESSION['name'])) {
     <link rel="stylesheet" href="./CSS/dashboard.css">
 
     <style>
-
-        .nav-auth{
+        .nav-auth {
             align-items: center;
         }
-        .hrOfUser{
-            font:max(15px,1vw) "rRegular";
-        }
-                table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        width: 100%;
+
+        .hrOfUser {
+            font: max(15px, 1vw) "rRegular";
         }
 
-        td, th {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
         }
 
         tr:nth-child(even) {
-        background-color: #dddddd;
+            background-color: #dddddd;
         }
-        
-</style>
+
+        .button {
+            text-decoration: none;
+            text-align: center;
+            background-color: var(--mainColor);
+            ;
+            color: white;
+            padding: 2px 8px 2px 8px;
+            border-radius: 8px;
+
+        }
+    </style>
 </head>
 
 
 <body>
-    
-<div class="navbar">
+
+    <div class="navbar">
         <div class="logoHolder">
             <a class="logo" href="adminHome.php"></a>
         </div>
@@ -71,11 +84,11 @@ if (!isset($_SESSION['name'])) {
         </div>
 
         <div class="nav-auth">
-            <h3 class="hrOfUser"><?php echo " Admin: ".$_SESSION['name']."<br>" ?></h3>
-            <a class="register"  href="logout.php">Log out</a>
+            <h3 class="hrOfUser"><?php echo " Admin: " . $_SESSION['name'] . "<br>" ?></h3>
+            <a class="register" href="logout.php">Log out</a>
         </div>
 
-        <div  class="hamburger-menu">
+        <div class="hamburger-menu">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
@@ -85,13 +98,13 @@ if (!isset($_SESSION['name'])) {
 
     <div class="dashboard">
         <div class="leftSideDashboard sidebar">
-            <p><?php echo " Admin: ".$_SESSION['name']."" ?></p>
+            <p><?php echo " Admin: " . $_SESSION['name'] . "" ?></p>
             <a>Dashboard</a>
             <a>Profile</a>
             <a>Analytics</a>
         </div>
         <div class="rightSideDashboard">
-        <table class="tableDashboard">
+            <table class="tableDashboard">
                 <tr>
                     <th>Id</th>
                     <th>Name</th>
@@ -99,19 +112,19 @@ if (!isset($_SESSION['name'])) {
                     <th>Email</th>
                     <th>Password</th>
                     <th>Role</th>
-                    <th>Action</th>
+                    <th colspan="2">Action</th>
                 </tr>
                 <?php
-                
-             include_once 'userRepository.php';
 
-             $userRepository = new UserRepository();
+                include_once 'userRepository.php';
 
-             $users = $userRepository->getAllUsers();
+                $userRepository = new UserRepository();
 
-             foreach($users as $user){
-                echo 
-                "
+                $users = $userRepository->getAllUsers();
+
+                foreach ($users as $user) {
+                    echo
+                    "
                 <tr>
                      <td>$user[id]</td>
                      <td>$user[name]</td>
@@ -119,16 +132,17 @@ if (!isset($_SESSION['name'])) {
                      <td>$user[email] </td>
                      <td>$user[password] </td>
                      <td>$user[role] </td>
-                     <td><a href='edit.php?id=$user[id]'>Edit</a> </td>
-                     <td><a href='delete.php?id=$user[id]'>Delete</a></td>
+                     <td><a href='edit.php?id=$user[id]' class='button'><i class='fa-solid fa-pencil'></i></a></td>
+                     <td><a href='delete.php?id=$user[id]' class='button'><i class='fa-solid fa-trash'></i></a></td>
                      
                 </tr>
                 ";
-             }
+                }
                 ?>
-                </table>
+            </table>
         </div>
     </div>
 
 </body>
+
 </html>
