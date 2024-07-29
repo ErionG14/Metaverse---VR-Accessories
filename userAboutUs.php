@@ -15,7 +15,7 @@ if (!isset($_SESSION['name'])) {
     <script src="https://kit.fontawesome.com/a23437b52f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./CSS/aboutUsSub.css">
     <link rel="stylesheet" href="./CSS/aboutUs.css">
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./CSS/navbar.css">
     <link rel="stylesheet" href="./CSS/banner.css">
     <link rel="stylesheet" href="./CSS/second-banner.css">

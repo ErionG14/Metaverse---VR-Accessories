@@ -14,7 +14,7 @@ if (!isset($_SESSION['name'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MetaVerse</title>
     <script src="https://kit.fontawesome.com/a23437b52f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./CSS/navbar.css">
     <link rel="stylesheet" href="./CSS/banner.css">
     <link rel="stylesheet" href="./CSS/second-banner.css">
@@ -231,7 +231,7 @@ if (!isset($_SESSION['name'])) {
     <script src="./JavaScript/typewriter.js"></script>
     <script>
         let i = 0;
-        let imgArray = ['slide1.jpg', 'slide2.jpg', 'slide3.jpg'];
+        let imgArray = ['./assets/images/slide1.jpg', './assets/images/slide2.jpg', './assets/images/slide3.jpg'];
 
         function changeImg() {
             document.getElementById('slideshow').src = imgArray[i];
