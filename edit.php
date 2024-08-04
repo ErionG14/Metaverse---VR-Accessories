@@ -38,14 +38,27 @@ $user  = $userRepository->getUserById($userId);
     <link rel="stylesheet" href="./CSS/footer.css">
 </head>
 <style>
-        .nav-auth {
-            align-items: center;
-        }
+    .nav-auth {
+        align-items: center;
+    }
 
-        .hrOfUser {
-            font: max(15px, 1vw) "rRegular";
-        }
-    </style>
+    .hrOfUser {
+        font: max(15px, 1vw) "rRegular";
+    }
+
+    .inputPassword select {
+        width: 100%;
+        height: max(30px, 2vw);
+        outline: none;
+        border: 1px solid lightgray;
+        border-radius: max(10px, 1vw);
+        padding: 2%;
+        font-family: "rRegular";
+        background-color: #f9f9f9;
+        color: #333;
+        cursor: pointer;
+    }
+</style>
 
 <body>
     <div class="navbar">
@@ -78,7 +91,7 @@ $user  = $userRepository->getUserById($userId);
                 <h1>EDIT USER</h1>
             </div>
             <div class="inputName input">
-                    <input type="text" name="id" value="<?= $user['id'] ?>" readonly>
+                <input type="text" name="id" value="<?= $user['id'] ?>" readonly>
             </div>
             <div class="inputName input">
                 <input type="text" name="name" value="<?= $user['name'] ?>">
@@ -93,14 +106,14 @@ $user  = $userRepository->getUserById($userId);
                 <input type="text" name="password" value="<?= $user['password'] ?>">
             </div>
             <div class="inputPassword input">
-                 <select name="role">
-        <option value="user" <?= $user['role'] == 'user' ? 'selected' : '' ?>>User</option>
-        <option value="admin" <?= $user['role'] == 'admin' ? 'selected' : '' ?>>Admin</option>
-    </select>
+                <select name="role">
+                    <option value="user" <?= $user['role'] == 'user' ? 'selected' : '' ?>>User</option>
+                    <option value="admin" <?= $user['role'] == 'admin' ? 'selected' : '' ?>>Admin</option>
+                </select>
             </div>
-           
-                <input type="submit" name="editBtn" value="save">
-            
+
+            <input type="submit" name="editBtn" value="save">
+
         </form>
 </body>
 
