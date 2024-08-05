@@ -35,6 +35,35 @@ if (!isset($_SESSION['name'])) {
         .hrOfUser {
             font: max(15px, 1vw) "rRegular";
         }
+
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        @media (max-width: 1000px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                text-align: right;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background-color: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                padding: 10px;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hamburger-menu {
+                display: flex;
+            }
+        }
     </style>
 </head>
 
@@ -54,8 +83,8 @@ if (!isset($_SESSION['name'])) {
         </div>
 
         <div class="nav-auth">
-            <h3 class="hrOfUser"><?php echo " Admin: ".$_SESSION['name']."<br>" ?></h3>
-            <a class="register"  href="logout.php">Log out</a>
+            <h3 class="hrOfUser"><?php echo " Admin: " . $_SESSION['name'] . "<br>" ?></h3>
+            <a class="register" href="logout.php">Log out</a>
         </div>
 
 
@@ -187,6 +216,12 @@ if (!isset($_SESSION['name'])) {
             </div>
         </div>
     </div>
+    <script>
+        // JavaScript to toggle the hamburger menu
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>

@@ -38,14 +38,43 @@ $product  = $productRepository->getProductById($productId);
     <link rel="stylesheet" href="./CSS/footer.css">
 </head>
 <style>
-        .nav-auth {
-            align-items: center;
+    .nav-auth {
+        align-items: center;
+    }
+
+    .hrOfUser {
+        font: max(15px, 1vw) "rRegular";
+    }
+
+    .hamburger-menu {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    @media (max-width: 1000px) {
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            text-align: right;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
         }
 
-        .hrOfUser {
-            font: max(15px, 1vw) "rRegular";
+        .nav-links.active {
+            display: flex;
         }
-    </style>
+
+        .hamburger-menu {
+            display: flex;
+        }
+    }
+</style>
 
 <body>
     <div class="navbar">
@@ -78,7 +107,7 @@ $product  = $productRepository->getProductById($productId);
                 <h1>EDIT PRODUCT</h1>
             </div>
             <div class="inputName input">
-                    <input type="text" name="id" value="<?= $product['id'] ?>" readonly>
+                <input type="text" name="id" value="<?= $product['id'] ?>" readonly>
             </div>
             <div class="inputName input">
                 <input type="text" name="name" value="<?= $product['name'] ?>">
@@ -92,10 +121,16 @@ $product  = $productRepository->getProductById($productId);
             <div class="inputPassword input">
                 <input type="file" name="image_url" value="<?= $product['image_url'] ?>">
             </div>
-           
-                <input type="submit" name="editBtn" value="save">
-            
+
+            <input type="submit" name="editBtn" value="save">
+
         </form>
+        <script>
+            // JavaScript to toggle the hamburger menu
+            document.querySelector('.hamburger-menu').addEventListener('click', function() {
+                document.querySelector('.nav-links').classList.toggle('active');
+            });
+        </script>
 </body>
 
 </html>

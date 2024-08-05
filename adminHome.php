@@ -33,6 +33,35 @@ if (!isset($_SESSION['name'])) {
         .hrOfUser {
             font: max(15px, 1vw) "rRegular";
         }
+
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        @media (max-width: 1000px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                text-align: right;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background-color: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                padding: 10px;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hamburger-menu {
+                display: flex;
+            }
+        }
     </style>
 </head>
 
@@ -155,10 +184,10 @@ if (!isset($_SESSION['name'])) {
                     <i class="fa-solid fa-microchip"></i>
                 </div>
                 <div class="card-text">
-                <p>We believe in the power of collaboration to unlock new dimensions
-                     within the metaverse. Metaverse proudly engages in strategic partnerships
-                      with industry leaders, content creators, and technology innovators.
-                       These collaborations enrich our platform, providing users with a
+                    <p>We believe in the power of collaboration to unlock new dimensions
+                        within the metaverse. Metaverse proudly engages in strategic partnerships
+                        with industry leaders, content creators, and technology innovators.
+                        These collaborations enrich our platform, providing users with a
                         kaleidoscope of experiences and opportunities.</p>
                 </div>
             </div>
@@ -168,10 +197,10 @@ if (!isset($_SESSION['name'])) {
                     <i class="fa-solid fa-code-branch"></i>
                 </div>
                 <div class="card-text">
-                <p>The future of metaverse holds boundless possibilities. As we continue to innovate
-                     and explore new horizons, we invite you to be a part of our journey.
-                      Join us in shaping the future of the metaverse, where imagination knows no
-                       limits, and together, we'll redefine the digital landscape for generations to come.</p>
+                    <p>The future of metaverse holds boundless possibilities. As we continue to innovate
+                        and explore new horizons, we invite you to be a part of our journey.
+                        Join us in shaping the future of the metaverse, where imagination knows no
+                        limits, and together, we'll redefine the digital landscape for generations to come.</p>
                 </div>
             </div>
         </div>
@@ -249,6 +278,11 @@ if (!isset($_SESSION['name'])) {
             }
         }
         document.addEventListener(onload, changeImg());
+
+        // JavaScript to toggle the hamburger menu
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
     </script>
 </body>
 

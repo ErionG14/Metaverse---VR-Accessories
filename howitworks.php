@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +17,38 @@
     <link rel="stylesheet" href="./CSS/products.css">
     <link rel="stylesheet" href="./CSS/footer.css">
     <link rel="stylesheet" href="./CSS/howitworksSub.css">
+    <style>
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        @media (max-width: 1000px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                text-align: right;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background-color: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                padding: 10px;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hamburger-menu {
+                display: flex;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <div class="navbar">
         <div class="logoHolder">
@@ -37,7 +69,7 @@
         </div>
 
 
-        <div  class="hamburger-menu">
+        <div class="hamburger-menu">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
@@ -51,5 +83,12 @@
             <a href="products.html">Click here <i class="fa-solid fa-arrow-right"></i></a>
         </div>
     </div>
+    <script>
+        // JavaScript to toggle the hamburger menu
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
 </body>
+
 </html>
