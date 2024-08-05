@@ -79,7 +79,7 @@ if (!isset($_SESSION['name'])) {
         cursor: pointer;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
         .nav-links {
             display: none;
             flex-direction: column;
