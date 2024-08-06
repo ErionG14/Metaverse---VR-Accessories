@@ -143,8 +143,6 @@
             <div class="leftSideDashboard sidebar">
                 <p><?php echo " Admin: " . $_SESSION['name'] . "" ?></p>
                 <a>Products Dashboard</a>
-                <a>Profile</a>
-                <a>Analytics</a>
             </div>
             <div class="rightSideDashboard">
                 <table class="tableDashboard">

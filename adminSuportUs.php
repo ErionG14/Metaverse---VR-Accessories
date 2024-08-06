@@ -17,13 +17,6 @@ if (!isset($_SESSION['name'])) {
     <link rel="stylesheet" href="./CSS/supportus.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./CSS/navbar.css">
-    <link rel="stylesheet" href="./CSS/banner.css">
-    <link rel="stylesheet" href="./CSS/second-banner.css">
-    <link rel="stylesheet" href="./CSS/paragraf-banner.css">
-    <link rel="stylesheet" href="./CSS/flexbox.css">
-    <link rel="stylesheet" href="./CSS/howitworks.css">
-    <link rel="stylesheet" href="./CSS/blog.css">
-    <link rel="stylesheet" href="./CSS/products.css">
     <link rel="stylesheet" href="./CSS/footer.css">
 </head>
 <style>
