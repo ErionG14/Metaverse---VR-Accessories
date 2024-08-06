@@ -24,10 +24,11 @@ $product  = $productRepository->getProductById($productId);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit User</title>
+    <title>Edit Product</title>
     <link rel="stylesheet" href="./CSS/edit.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./CSS/navbar.css">
+    <link rel="icon" href="./assets/images/icon-meta.png" type="image/x-icon"/>
 </head>
 <style>
     .nav-auth {

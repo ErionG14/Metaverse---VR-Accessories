@@ -43,6 +43,7 @@
         <link rel="stylesheet" href="./CSS/navbar.css">
         <link rel="stylesheet" href="./CSS/footer.css">
         <link rel="stylesheet" href="./CSS/dashboard.css">
+        <link rel="icon" href="./assets/images/icon-meta.png" type="image/x-icon"/>
     </head>
     <style>
         .nav-auth {

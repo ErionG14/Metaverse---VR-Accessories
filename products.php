@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./CSS/navbar.css">
     <link rel="stylesheet" href="./CSS/footer.css">
     <link rel="stylesheet" href="./CSS/productSub.css">
+    <link rel="icon" href="./assets/images/icon-meta.png" type="image/x-icon"/>
 </head>
 <style>
     .signIn-nav {

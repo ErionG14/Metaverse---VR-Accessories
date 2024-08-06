@@ -28,6 +28,7 @@ $user  = $userRepository->getUserById($userId);
     <link rel="stylesheet" href="./CSS/edit.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./CSS/navbar.css">
+    <link rel="icon" href="./assets/images/icon-meta.png" type="image/x-icon"/>
 </head>
 <style>
     .nav-auth {

@@ -19,6 +19,7 @@ if (!isset($_SESSION['name'])) {
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./CSS/navbar.css">
     <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="icon" href="./assets/images/icon-meta.png" type="image/x-icon"/>
 </head>
 <style>
     .nav-auth {
@@ -68,7 +69,7 @@ if (!isset($_SESSION['name'])) {
         .hamburger-menu {
             display: flex;
         }
-        
+
         .hrOfUser-nav {
                 display: flex;
             }

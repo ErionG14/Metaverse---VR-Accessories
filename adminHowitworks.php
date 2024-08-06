@@ -17,6 +17,7 @@ if (!isset($_SESSION['name'])) {
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./CSS/navbar.css">
     <link rel="stylesheet" href="./CSS/howitworksSub.css">
+    <link rel="icon" href="./assets/images/icon-meta.png" type="image/x-icon"/>
     <style>
         .nav-auth {
             align-items: center;

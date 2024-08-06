@@ -24,6 +24,7 @@ if (!isset($_SESSION['name'])) {
     <link rel="stylesheet" href="./CSS/blog.css">
     <link rel="stylesheet" href="./CSS/products.css">
     <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="icon" href="./assets/images/icon-meta.png" type="image/x-icon"/>
 </head>
 <style>
     .nav-auth {

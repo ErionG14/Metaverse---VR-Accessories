@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./CSS/navbar.css">
     <link rel="stylesheet" href="./CSS/howitworks.css">
     <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="icon" href="./assets/images/icon-meta.png" type="image/x-icon"/>
     <style>
         .hamburger-menu {
             display: none;
