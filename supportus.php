@@ -18,6 +18,21 @@
             cursor: pointer;
         }
 
+        .signIn-nav {
+            color: #000;
+            display: none;
+        }
+
+        .register-nav {
+            color: #ffffff;
+            display: none;
+        }
+
+        .register-nav,
+        .signIn-nav {
+            font-size: max(14px, 0.8vw);
+        }
+
         @media (max-width: 1000px) {
             .nav-links {
                 display: none;
@@ -39,6 +54,14 @@
             .hamburger-menu {
                 display: flex;
             }
+
+            .signIn-nav {
+                display: flex;
+            }
+
+            .register-nav {
+                display: flex;
+            }
         }
     </style>
 </head>
@@ -55,6 +78,8 @@
             <a href="products.php">Products</a>
             <a href="aboutUs.php">About Us</a>
             <a href="#">Support Us</a>
+            <a class="signIn-nav" href="login.php">Log In</a>
+            <a class="register-nav" href="resgister.php">Register</a>
         </div>
 
         <div class="nav-auth">

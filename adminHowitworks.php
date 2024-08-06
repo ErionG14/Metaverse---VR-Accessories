@@ -26,6 +26,18 @@ if (!isset($_SESSION['name'])) {
             font: max(15px, 1vw) "rRegular";
         }
 
+        .register-nav {
+
+            font-size: max(14px, 0.8vw);
+            display: none;
+
+        }
+
+        .hrOfUser-nav {
+            font: max(15px, 1vw) "rRegular";
+            display: none;
+        }
+
         .hamburger-menu {
             display: none;
             flex-direction: column;
@@ -53,6 +65,19 @@ if (!isset($_SESSION['name'])) {
             .hamburger-menu {
                 display: flex;
             }
+
+            .hrOfUser-nav {
+                font: max(15px, 1vw) "rRegular";
+                display: flex;
+
+            }
+
+            .register-nav {
+
+                font-size: max(14px, 0.8vw);
+                display: flex;
+
+            }
         }
     </style>
 </head>
@@ -70,6 +95,8 @@ if (!isset($_SESSION['name'])) {
             <a href="adminAboutUs.php">About Us</a>
             <a href="adminSuportUs.php">Support Us</a>
             <a href="dashboard.php">Dashboard</a>
+            <h3 class="hrOfUser-nav"><?php echo " Admin: " . $_SESSION['name'] . "<br>" ?></h3>
+            <a class="register-nav" href="logout.php">Log out</a>
         </div>
 
         <div class="nav-auth">

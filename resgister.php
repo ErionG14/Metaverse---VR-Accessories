@@ -45,6 +45,21 @@ if (isset($_POST['registerbtn'])) {
             cursor: pointer;
         }
 
+        .signIn-nav {
+            color: #000;
+            display: none;
+        }
+
+        .register-nav {
+            color: #ffffff;
+            display: none;
+        }
+
+        .register-nav,
+        .signIn-nav {
+            font-size: max(14px, 0.8vw);
+        }
+
         @media (max-width: 1000px) {
             .nav-links {
                 display: none;
@@ -66,6 +81,14 @@ if (isset($_POST['registerbtn'])) {
             .hamburger-menu {
                 display: flex;
             }
+
+            .signIn-nav {
+                display: flex;
+            }
+
+            .register-nav {
+                display: flex;
+            }
         }
     </style>
 </head>
@@ -81,6 +104,8 @@ if (isset($_POST['registerbtn'])) {
             <a href="howitworks.php">How it Works</a>
             <a href="products.php">Products</a>
             <a href="aboutUs.php">About Us</a>
+            <a href="supportus.php">Support Us</a>
+            <a class="signIn-nav" href="login.php">Log In</a>
         </div>
 
         <div class="nav-auth">

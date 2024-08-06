@@ -53,6 +53,8 @@
             <a href="products.php">Products</a>
             <a href="aboutUs.php">About Us</a>
             <a href="supportus.php">Support Us</a>
+            <a class="signIn-nav" href="login.php">Log In</a>
+            <a class="register-nav" href="resgister.php">Register</a>
         </div>
 
         <div class="nav-auth">

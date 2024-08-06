@@ -38,6 +38,18 @@ $user  = $userRepository->getUserById($userId);
         font: max(15px, 1vw) "rRegular";
     }
 
+    .register-nav {
+
+        font-size: max(14px, 0.8vw);
+        display: none;
+
+    }
+
+    .hrOfUser-nav {
+        font: max(15px, 1vw) "rRegular";
+        display: none;
+    }
+
     .inputPassword select {
         width: 100%;
         height: max(30px, 2vw);
@@ -78,6 +90,19 @@ $user  = $userRepository->getUserById($userId);
         .hamburger-menu {
             display: flex;
         }
+
+        .hrOfUser-nav {
+            font: max(15px, 1vw) "rRegular";
+            display: flex;
+
+        }
+
+        .register-nav {
+
+            font-size: max(14px, 0.8vw);
+            display: flex;
+
+        }
     }
 </style>
 
@@ -93,6 +118,8 @@ $user  = $userRepository->getUserById($userId);
             <a href="adminProducts.php">Products</a>
             <a href="adminAboutUs.php">About Us</a>
             <a href="adminSuportUs.php">Support Us</a>
+            <h3 class="hrOfUser-nav"><?php echo " Admin: " . $_SESSION['name'] . "<br>" ?></h3>
+            <a class="register-nav" href="logout.php">Log out</a>
         </div>
 
         <div class="nav-auth">

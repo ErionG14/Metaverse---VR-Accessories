@@ -29,6 +29,18 @@ if (!isset($_SESSION['name'])) {
         font: max(15px, 1vw) "rRegular";
     }
 
+    .hrOfUser-nav {
+            font: max(15px, 1vw) "rRegular";
+            display: none;
+        }
+
+        .register-nav {
+
+            font-size: max(14px, 0.8vw);
+            display: none;
+
+        }
+
     .hamburger-menu {
         display: none;
         flex-direction: column;
@@ -56,6 +68,14 @@ if (!isset($_SESSION['name'])) {
         .hamburger-menu {
             display: flex;
         }
+        
+        .hrOfUser-nav {
+                display: flex;
+            }
+
+            .register-nav {
+                display: flex;
+            }
     }
 </style>
 
@@ -71,6 +91,8 @@ if (!isset($_SESSION['name'])) {
             <a href="userProducts.php">Products</a>
             <a href="#">About Us</a>
             <a href="userSuportUs.php">Support Us</a>
+            <h3 class="hrOfUser-nav"><?php echo "Username: " . $_SESSION['name'] . "<br>" ?></h3>
+            <a class="register-nav" href="logout.php">Log out</a>
         </div>
 
         <div class="nav-auth">
