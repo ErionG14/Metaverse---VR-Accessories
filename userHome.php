@@ -86,7 +86,7 @@ if (!isset($_SESSION['name'])) {
 
 <body>
 
-    <!-- KTU FILLON NAVBARI-->
+    <!-- NAVBAR STARTS HERE-->
     <div class="navbar">
         <div class="logoHolder">
             <a class="logo" href="index.php"></a>
@@ -113,9 +113,9 @@ if (!isset($_SESSION['name'])) {
             <div class="line"></div>
         </div>
     </div>
-    <!-- KTU PERFUNDON NAVBARI-->
+    <!--NAVBAR ENDS HERE-->
 
-    <!--BANNER FILLON KETU-->
+    <!--BANNER STARTS HERE-->
     <div class="banner">
         <h1 class="title">What is Metaverse?</h1>
         <div class="image-container">
@@ -124,17 +124,16 @@ if (!isset($_SESSION['name'])) {
         </div>
 
         <div class="typewriter-container">
-            <!-- TYPING EFFECT PER PARAGRAFIN E PARE PERMES JAVASCRIPT -->
+            <!-- TYPING EFFECT FOR THE PARAGRAPH VIA JAVASCRIPT-->
             <p class="typewriter-text" id="typewriter-text">
                 <?php echo "The metaverse is the next evolution in social connection and the successor to the mobile internet."; ?>
             </p>
         </div>
 
-        <!-- QA TKISH TASH ME SHTU E SHTON MRENA BANNERIT -->
     </div>
-    <!--BANNER MBARON KETU-->
+    <!--BANNER ENDS HERE-->
 
-    <!-- HOW IT WORKS FILLON KETU -->
+    <!-- HOW IT WORKS STARTS HERE -->
     <div class="howItWorks">
         <div class="howItWorks-heading">
             <h1>How it Works</h1>
@@ -151,9 +150,9 @@ if (!isset($_SESSION['name'])) {
             </div>
         </div>
     </div>
-    <!-- HOW IT WORKS MBARON KETU -->
+    <!-- HOW IT WORKS ENDS HERE -->
 
-    <!-- BLOG FILLON KETU -->
+    <!-- BLOG STARTS HERE -->
     <div class="blog">
         <div class="blogUp">
             <h1>Blog</h1>
@@ -171,7 +170,7 @@ if (!isset($_SESSION['name'])) {
             </div>
         </div>
     </div>
-    <!-- BLOG MBARON KETU -->
+    <!-- BLOG ENDS HERE -->
 
     <div class="products">
         <div class="productsHeading">
