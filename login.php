@@ -21,7 +21,6 @@
         .hamburger-menu {
             display: none;
             flex-direction: column;
-            cursor: pointer;
         }
 
         .signIn-nav {

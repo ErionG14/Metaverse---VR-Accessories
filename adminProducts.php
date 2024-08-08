@@ -76,7 +76,6 @@ session_start();
         .hamburger-menu {
             display: none;
             flex-direction: column;
-            cursor: pointer;
         }
 
         .register-nav {

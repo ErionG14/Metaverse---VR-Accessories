@@ -43,7 +43,6 @@ if (isset($_POST['registerbtn'])) {
         .hamburger-menu {
             display: none;
             flex-direction: column;
-            cursor: pointer;
         }
 
         .signIn-nav {

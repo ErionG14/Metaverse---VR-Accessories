@@ -44,13 +44,11 @@ if (!isset($_SESSION['name'])) {
 
             font-size: max(14px, 0.8vw);
             display: none;
-
         }
 
         .hamburger-menu {
             display: none;
             flex-direction: column;
-            cursor: pointer;
         }
 
         @media (max-width: 1000px) {

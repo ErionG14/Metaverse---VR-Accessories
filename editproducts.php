@@ -54,7 +54,6 @@ $product  = $productRepository->getProductById($productId);
     .hamburger-menu {
         display: none;
         flex-direction: column;
-        cursor: pointer;
     }
 
     @media (max-width: 1000px) {

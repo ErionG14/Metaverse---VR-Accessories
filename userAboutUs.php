@@ -45,7 +45,6 @@ if (!isset($_SESSION['name'])) {
     .hamburger-menu {
         display: none;
         flex-direction: column;
-        cursor: pointer;
     }
 
     @media (max-width: 1000px) {
