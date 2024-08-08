@@ -32,6 +32,11 @@ session_start();
             justify-content: center;
             align-items: center;
             border-radius: 5px;
+            transition: .5s ease-in-out;
+        }
+
+        .mngPrd-btn:hover {
+            background-color: #83A5FF;
         }
 
         .mngPrd-btn a {

@@ -67,7 +67,11 @@ if (!isset($_SESSION['name'])) {
             color: white;
             padding: 2px 8px 2px 8px;
             border-radius: 8px;
+            transition: .5s ease-in-out;
+        }
 
+        .button:hover {
+            background-color: #83A5FF;
         }
 
         .hamburger-menu {
